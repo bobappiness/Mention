@@ -42,7 +42,7 @@ public extension MentionUserType {
 
 extension MentionUserType {
     var humanReadableMentionString: NSAttributedString {
-        let attributedString = NSMutableAttributedString(string: name, attributes: [
+        let attributedString = NSMutableAttributedString(string:  "@" + name, attributes: [
             MentionAttributes.Encoded : encodedNameForAPI(),
             MentionAttributes.Name: name,
             MentionAttributes.UserId : id,
