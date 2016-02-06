@@ -37,7 +37,7 @@ extension ViewController: MentionComposerDelegate {
         // add delay to simulate network response time in the UI
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
-            handler(users: [MentionUser(name: "test user", id: 0)])
+            handler(users: [MentionUser(name: "test user", id: 3), MentionUser(name: "test user A", id: 0), MentionUser(name: "test user B", id: 1), MentionUser(name: "test user C", id: 2)])
         }
     }
 }
