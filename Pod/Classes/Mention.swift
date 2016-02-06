@@ -34,4 +34,4 @@ struct MentionAttributes {
 }
 
 public var MentionCharacter: Character = "@"
-public var MentionColor                = UIColor.blueColor()
+public var MentionColor                = UIColor(red: 61.0/255.0, green: 169.0/255.0, blue: 255.0/255.0, alpha: 1.0) //UIColor.blueColor()
